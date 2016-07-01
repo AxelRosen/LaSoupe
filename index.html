@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="description" content="" />
+<title>La Soupe</title>
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+    
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">   
+    
+
+    
+
+<body>
+
+<div id="wrapper">
+
+<header>
+          <h1 id="laSoupeLogo">
+          <a href="index.html">La Soupe</a>
+        </h1>
+        <nav>
+            <a href="kontakt.html" id="navbarCentering">Kontakt</a>
+            <a href="om.html">Om oss</a>
+            <a href="hitta.html">Hitta till oss</a>
+                        <a href="oppettider.html">Öppettider</a>
+            <a href="catering.html">Catering</a>
+            <a href="VaraSoppor.html">Våra soppor</a>
+
+        </nav>
+</header>
+
+<div id="main">
+    <div id="content">
+        <section>
+<body>
+
+    
+    
+<div class="w3-display-container">
+  <img class="mySlides  " src="bilder/sylt.png" >
+</div>
+
+<div class="w3-display-container">
+  <img class="mySlides  " src="bilder/insida.jpg">
+</div>
+
+<div class="w3-display-container">
+  <img class="mySlides  " src="bilder/br%C3%B6d1.png">
+</div>
+
+<div class="w3-display-container">
+  <img class="mySlides  " src="bilder/insida.jpg">
+</div>
+
+    
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:12%;left:0" onclick="plusDivs(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>    
+
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:12%;right:0" onclick="plusDivs(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+
+    <!------IMAGECHANGER-------->
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4500);
+}
+</script>
+
+</body>
+
+        </section>
+
+        
+        <section class="color">
+            <div class="container">
+                <h1 id="fbPicHeader">Välkommen till La Soupe</h1>
+                <img src="bilder/logga.jpg" id="laSoupeLogga">
+                <p id="fbPicHeaderText">Klicka nedan för att komma till våra facebook-sidor</p>
+                </div>
+                
+                <div id="fbContainer">
+                <div class="indexContainer">
+                <a href="https://www.facebook.com/La-Soupe-Davidshalls-torg-9-1653629338188444/?fref=ts"><img id="indexPic" src="bilder/davidshall.jpg"></a>
+                    <h1 id="fbHeader">Malmö Davidshallstorg</h1>
+                </div>
+           
+                <div class="indexContainer">
+                <a href="https://www.facebook.com/La-Soupe-Davidshalls-torg-9-1653629338188444/?fref=ts"><img id="indexPic" src="bilder/adelsgatan.jpg"></a>
+                     <h1 id="fbHeader">Malmö Adelgatan</h1>
+
+                </div>
+                
+                <div class="indexContainer">
+                <a href="https://www.facebook.com/La-Soupe-Davidshalls-torg-9-1653629338188444/?fref=ts"><img id="indexPic" src="bilder/Isbergsgata.jpg"></a>
+                  <h1 id="fbHeader">Malmö Isbergs gata</h1>
+                </div>
+            </div>
+        
+        </section>
+        <section>
+            <div class="CheckBoxContainer">
+                <div class="indexCheckBoxContainer">
+                <h1 id="checkBoxHeader">La Soupe is the answer - What is the question?
+                    </h1>    
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Soppa,surdegsbröd & färskost? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Lunch med mamma? </div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Konferens?</div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Slippa-äta-rester?</div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Kundmöte? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Personal-lunch? </div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Företagsevent? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Kan billigt vara bra?</div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Lunch med kollegorna </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Soppa med kärlek? </div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Stamkundskort? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">5:2-smal-mat?</div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Catering?</div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">1 eller 500 gäster?</div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Barndop?</div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Födelsedags-kalas?</div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Present till anställda? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Långlagad snabbmat? </div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Föreningsmöte? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Tag-med-hem? </div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Vinprovning? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Ekologiskt & kravmärkt & härodlat? </div>
+            <div class="indexLeftCheckBox"><img src="bilder/checkBox.png" id="checkBox">Fredagsmys? </div>
+            <div class="indexRightCheckBox"><img src="bilder/checkBox.png" id="checkBox">Leverans efter överenskommelse? </div>
+               
+                <h1 id="checkBoxQuote">"Vackra ord kan man inte leva av, tacka vet jag soppa." - Molière</h1>
+                </div> 
+            </div>
+        </section>
+    </div>
+</div><!-- #main -->
+<section>
+    </section>
+
+</div><!-- /#wrapper -->
+<div id="footer">
+    <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+	<a href="https://www.facebook.com/La-Soupe-Davidshalls-torg-9-1653629338188444/?fref=ts"><i class='hi-icon fa fa-facebook-square fa-2x facebookLogo'></i></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	<a href="https://www.instagram.com/lasoupeswe/"><i class='hi-icon fa fa-instagram fa-2x instagramLogo'></i></a>
+</div>
+   <p id="telenummer"> Telefonnummer: 040-12 99 34</p>
+		</div><!-- #footer -->
+
+
+</body>
+</html>

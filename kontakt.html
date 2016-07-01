@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+<title>La Soupe</title>
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">   
+    
+</head>
+
+
+
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="navbar">
+        <h1 id="laSoupeLogo">
+          <a href="index.html">La Soupe</a>
+        </h1>
+        <nav>
+            <a href="kontakt.html" id="navbarCentering">Kontakt</a>
+            <a href="om.html">Om oss</a>
+            <a href="hitta.html">Hitta till oss</a>
+            <a href="oppettider.html">Öppettider</a>
+            <a href="catering.html">Catering</a>
+            <a href="VaraSoppor.html">Våra soppor</a>
+        </nav>
+    </div>
+</header><!-- /header -->
+
+<div id="main">
+    <div id="content">
+       <section>
+            <div class="kontaktContainer">
+                <div id="kontaktInfoBox">
+                    <i class="fa fa-phone-square fa-3x telefonLogo"></i>
+            <p id="kontaktInfo">040-12 99 34</p>
+                    </div>
+                     <div id="kontaktInfoBox">
+                    <i class="fa fa-envelope fa-3x telefonLogo"></i>
+            <p id="kontaktInfo">040-12 99 34</p>
+                    </div>
+                <div id="kontaktInfoBox">
+                <i class="fa fa-home fa-4x houseLogo"></i>
+            <p id="kontaktInfoAdress">Davidshalls torg 9, Malmö</p>
+            <p id="kontaktInfoAdress">Adelgatan 4, Malmö</p>
+            <p id="kontaktInfoAdress">Isbergs gata 14, Malmö</p>
+
+                    </div>
+                <div class="verticalLine"> </div>
+
+                    
+                <h1 id="kontaktHeader">
+            Fyll i formuläret nedan för en offertförfrågan
+                    </h1 >
+                <div id="filloutCatering"></div>
+<form id="contactform" method="POST">
+    <div id="yttre250">
+    Företagsnamn:<input type="text" name="Företagsnamn" id="namnRuta">
+        </div>
+    <div id="yttre250">
+    Kontaktperson:<input type="text" name="Kontaktperson" id="namnRuta">
+        </div>
+    <div id="yttre250">
+    Telefonnummer:<input type="text" name="Telefonnummer" id="namnRuta">
+        </div>
+        <div id="yttre250">
+    E-mail:<input type="email" name="Mail" id="emailRuta">
+    </div>
+            <div id="yttre250">
+    Adress:<input type="text" name="Adress" id="antalRuta">
+    </div>
+    <div id="yttre250">
+    Postnummer:<input type="text" name="Postnummer" id="namnRuta">
+        </div>
+    <div id="yttre250">
+    Stad:<input type="text" name="Stad" id="namnRuta">
+        </div>
+    <div id="yttreKommentarRuta">
+    Övrig kommentar:<input type="text" name="Kommentar" id="kommentarRuta">
+    </div>
+    <input type="hidden" name="_subject" value="Offertförfrågan" />
+    <div id="skickaKnapp">
+    <input type="submit" value="Skicka"></div>
+    <input type="hidden" name="_next" value="index.html" />
+    <input type="text" name="_gotcha" style="display:none" />
+</form>
+                <script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'axelmrosen' + '@' + 'email' + '.' + 'com');
+</script>
+                
+                
+                
+            </div>
+        </section>
+    </div>
+</div><!-- #main -->
+<div id="footer">
+    <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+	<a href="https://www.facebook.com/La-Soupe-Davidshalls-torg-9-1653629338188444/?fref=ts"><i class='hi-icon fa fa-facebook-square fa-2x facebookLogo'></i></a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+	<a href="https://www.instagram.com/lasoupeswe/"><i class='hi-icon fa fa-instagram fa-2x instagramLogo'></i></a>
+</div>
+   <p id="telenummer"> Telefonnummer: 040-12 99 34</p>
+		</div><!-- #footer -->
+
+</div><!-- /#wrapper -->
+
+
+</body>
+</html>
