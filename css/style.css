@@ -73,6 +73,11 @@ a {
   text-decoration: none; }
 
 a:hover {
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
   color: #FF5B5F; }
 
 /* =Start page
@@ -218,7 +223,7 @@ section {
 .indexCheckBoxContainer {
       position: relative;
     padding-top:50px;
-    background-color:#FFF7BD;
+    background-color:#FFF0BD;
     height:525px;
     
 
@@ -333,7 +338,7 @@ section {
     background-color: #F3F3F3;
      width:80%;
     margin:auto;
-    height:230vh;
+    height:240vh;
 }
 
 #sopporInfo {
@@ -385,6 +390,7 @@ section {
     background-color:#F3F3F3 ;
   display: none;
   font-size: 14px;
+    list-style: none
 }
 
 
@@ -408,11 +414,9 @@ header {
   
     header nav a {
         float:right;
-        text-align: center;
         font-family:  "Lucida Calligraphy", "Zapf Chancery", "Apple Chancery", "Lucida Handwriting", Palatino; 
         font-style: italic;
-      line-height: 150px;
-      margin-top: -100px;
+        margin-top:-26.5px;
       margin-left: 20px;
       color: #778899 ;
       font-size: 18px;
@@ -421,7 +425,7 @@ header {
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
-      header nav a:hover {
+      header a:hover {
         color: #FF5B5F; }
  
 
@@ -443,16 +447,6 @@ header {
 	transition: background 0.2s, color 0.2s;	
 }
 
-
-
-@keyframes spinAround {
-	from {
-		transform: rotate(0deg)
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
 
 /* =Footer
 -------------------------------------------------------------- */
@@ -524,9 +518,6 @@ margin-top:30px;
     height: 50px;
     text-align: center;
     margin: 0 auto; }
-    header nav a {
-      line-height: 50px;
-    }
   header.smaller {
     height: 75px; }
     header.smaller h1#logo {
@@ -984,7 +975,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 
 .cateringContainer {
         background-color:#F3F3F3 ;
-    height:74.5vh;
+    height:88vh;
     width:80%;
     margin-top:-20px;
     margin-bottom: auto;
@@ -1006,8 +997,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 }
 
 #kommentarRuta {
-   height:25px;
-    width:100%;
+    height:100px;
+    width:400px;
 }
 
 #cateringFillout {
@@ -1023,6 +1014,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 #yttre250 {
         font-family:  "Helvetica", sans-serif; 
     width:250px;
+        display:flex;
+
 }
 
 #yttreMailRuta {
@@ -1105,6 +1098,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 }
 
 #kontaktHeader {
+        line-height: 25px;
     font-size: 20px;
     padding-top:50px;
             font-family:  "Lucida Calligraphy", "Zapf Chancery", "Apple Chancery", "Lucida Handwriting", Palatino; 
@@ -1113,7 +1107,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 
 .omOssContainer {
        background-color:#F3F3F3 ;
-    height:73.5vh;
+    height:130vh;
     width:80%;
     margin-top:-10px;
     margin-bottom: auto;
@@ -1163,7 +1157,7 @@ float: right;
 text-align: center;
 font-size: 24px;
     color: #708090;
-    height:40px;
+    height:60px;
 }
 
 #filloutHitta {
@@ -1230,7 +1224,7 @@ font-size: 24px;
 
 .kontaktContainer {
             background-color:#F3F3F3 ;
-    height:150vh;
+    height:76vh;
     width:80%;
     margin-top:-20px;
     margin-bottom: auto;
@@ -1309,3 +1303,118 @@ margin-left:22%;
         width: 33%;
   margin: 0 auto;
 }
+
+#omOssText {
+        font-family:  "Helvetica", sans-serif; 
+  font-size: 14px;
+}
+
+#omOssHeader {
+    padding-top:20px;
+      font-family: "Lucida Calligraphy", "Zapf Chancery", "Apple Chancery", "Lucida Handwriting", Palatino; 
+}
+
+#omOssBild {
+    width:100%;
+        position: relative;
+    display: block;
+}
+
+#sopporText {
+    text-align: center;
+        font-family:  "Lucida Calligraphy", "Zapf Chancery", "Apple Chancery", "Lucida Handwriting", Palatino; 
+  font-size: 20px;
+    padding-top: 20px;
+}
+
+#kontaktText {
+    padding-top: 30px;
+    text-align: center;
+     font-family:  "Helvetica", sans-serif; 
+  font-size: 20px;
+}
+
+#soppInnehåll {
+    padding-top: 30px;
+        font-weight: bold;
+}
+
+#sopporOBS {
+     text-align: center;
+        font-family:  "Lucida Calligraphy", "Zapf Chancery", "Apple Chancery", "Lucida Handwriting", Palatino; 
+  font-size: 20px;
+}
+
+#soppInnehållSistaRad {
+     padding-top: 15px;
+        font-weight: bold;
+}
+
+.cateringPic {
+ padding-top: 8px;   
+}
+
+.öppetContainer {
+    background-color:#F3F3F3 ;
+    height:73vh;
+    width:80%;
+    margin-top:-10px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 30px;
+}
+
+
+
+ul {
+	width: 290px;
+    float:left;
+    margin-left:200px;
+}
+ul li {
+	list-style-type: none;
+	padding: 2px;
+}
+
+/*Adding custom checkbox icons*/
+label {
+	position: relative;
+	padding-left: 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+label:before, label:after {
+	font-family: FontAwesome;
+	font-size: 21px;
+	/*absolutely positioned*/
+	position: absolute; top: 0; left: 0;
+}
+label:before {
+	content: '\f096'; /*unchecked*/
+}
+label:after {
+	content: '\f046'; /*checked*/
+	/*checked icon will be hidden by default by using 0 max-width and overflow hidden*/
+	max-width: 0;
+	overflow: hidden;
+	opacity: 0.5;
+	/*CSS3 transitions for animated effect*/
+	transition: all 0.35s;
+}
+
+/*hiding the original checkboxes*/
+input[type="checkbox"] {
+	display: none;
+    
+}
+/*when the user checks the checkbox the checked icon will animate in*/
+input[type="checkbox"]:checked + label:after {
+	max-width: 25px; /*an arbitratry number more than the icon's width*/
+	opacity: 1; /*for fade in effect*/
+}
+
+/*adding some colors for fun*/
+#one+label:before, #one+label:after {color: hsl(0, 45%, 40%);}
+#two+label:before, #two+label:after {color: hsl(60, 45%, 40%);}
+#three+label:before, #three+label:after {color: hsl(120, 45%, 40

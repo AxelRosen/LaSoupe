@@ -44,24 +44,40 @@
         <section>
             <div class="cateringContainer">
                 <h1 id="kontaktHeader">
-             Vi erbjuder gärna catering för era tillställningar, stora som små. Fyll i formuläret nedan så hör vi av oss!
+             Vi erbjuder gärna catering för era tillställningar, stora som små. Självklart lagar vi gärna veganskt eller vegetariskt. Fyll i formuläret nedan så hör vi av oss!
                 </h1>
                     <div id="filloutCatering"></div>
 <form id="contactform" method="POST">
     <div id="yttre250">
-    Namn:<input type="text" name="Namn" id="namnRuta">
+     <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon">   <i class="fa fa-user fa-2x"></i>
+</span>
+         <input type="text" name="Namn" id="namnRuta" placeholder="Förnamn Efternamn">
         </div>
+    </div>
         <div id="yttre250">
-    E-mail:<input type="email" name="Mail" id="emailRuta">
+    <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-2x cateringPic"></i></span>
+ <input type="email" name="Email" id="emailRuta" placeholder="Email-adress">
+</div>
     </div>
     <div id="yttre250">
-    Telefonnummer:<input type="text" name="Telefonnummer" id="emailRuta">
+    <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-phone fa-2x cateringPic"></i></span>
+        <input type="text" name="Telefonnummer" id="emailRuta" placeholder="Telefonnummer">
+    </div>
     </div>
     <div id="yttre100">
-    Antal(ca):<input type="text" name="Antal" id="antalRuta">
+    <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-users fa-2x cateringPic"></i></span>
+        <input type="text" name="Antal" id="antalRuta" placeholder="Antal (ca)">
+    </div>
     </div>
             <div id="yttreKommentarRuta">
-    Berätta om vad ni är intresserade av:<input type="text" name="Kommentar" id="kommentarRuta">
+    <div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-pencil-square-o fa-2x cateringPic"></i></span>
+    </div>
+    <textarea name="Kommentar" id="kommentarRuta" placeholder="Berätta gärna lite om tillställningen"></textarea>
     </div>
     <input type="hidden" name="_subject" value="Ny catering-förfrågan" />
     <div id="skickaKnapp">
@@ -71,7 +87,7 @@
 </form>
                 <script>
     var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'axelmrosen' + '@' + 'email' + '.' + 'com');
+    contactform.setAttribute('action', '//formspree.io/' + 'axelmrosen' + '@' + 'gmail' + '.' + 'com');
 </script>
                 
                 
